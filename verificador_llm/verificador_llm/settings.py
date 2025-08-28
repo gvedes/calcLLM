@@ -17,9 +17,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'your-secret-key-here'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+ALLOWED_HOSTS = [
+    'calcllm.onrender.com',
+    'localhost',
+    '127.0.0.1',
+    '.onrender.com',
+]
 
-ALLOWED_HOSTS = []
+DEBUG = False
 
 # Application definition
 
